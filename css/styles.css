@@ -78,10 +78,12 @@ html,body {
 }
 
 .header--bg{
-  background: url("../assets/images/p.p2.jpg") no-repeat;
+  background: url("../assets/images/IMG-20220810-WA0050.jpg") no-repeat;
   background-size: cover;
   position: relative;
-  z-index: 1;
+  z-index: -7;
+  height: 100%;
+  width: 100%;
 }
 
 .header--bg:after{
@@ -111,6 +113,7 @@ html,body {
   font-weight: bold;
   color: #fff;
   margin-top: 0;
+  font-family: 'Fraunces';
 }
 
 .header__content__sub-title li{
@@ -161,15 +164,14 @@ html,body {
   background-color: #fff;
 }
 
-/* .navbar-brand{
-  font-size: 25px;
-  font-family: Roboto-Light;
+.label{
+  font-size: 35px;
+  font-family:'Fraunces';
   font-weight: bold;
-  background: url("../assets/images/p.folio.png") no-repeat;
-  padding:0 120px;
-  background-size: 65px;
-  background-position: center;
-} */
+  padding:0 0px;
+  color: white;
+  margin: 0;
+}
 
 @media (min-width: 768px) {
   .nav{
@@ -255,16 +257,65 @@ html,body {
   font-size: 16px;
   color: #636262;
   padding-bottom: 25px;
-  border-bottom: 1px #C1C1C1 dashed;
+  padding:0 50px;
   display: block;
 }
+
 .about__image{
-  margin-top: -70px;
+ margin-right: 10px;
 }
-.about__image img{
-  margin-left: 100px;
+@media screen and (min-width:270px) and (max-width:361px){
+  .about__description{
+    padding-left: 0px;
+  }
+  .navbar{
+    padding-top:10px;
+  }
+  .about__image{
+    text-align: center;
+  }
+ .header__content__sub-title li{
+   display: inline-block;
+   font-size: 12px;
+   color: #e6e6e6;
+ }
+ .header__content__title {
+  font-size: 17px;
+  font-family:'Fraunces';
 }
+.header__content__block {
+  font-size: 20px;
+}
+.header__content__sub-title li {
+  font-size: 12px;
+}
+.header__content {
+  padding-top: 30px;
+  padding-bottom: 10px;
+}
+ .header--bg{
+   height: 65vh;
+ }
+ .about__image img{
+  margin:0 15px;
+  width: 100%;
+  height: 100%;
+}
+.button--colorful{
+  margin-left: 0px;
+ }
+}
+
 @media screen and (min-width:362px) and (max-width:481px){
+  .about__description{
+    padding-left: 0px;
+  }
+  .button--colorful{
+    margin-left: 0px;
+   }
+  .navbar{
+    padding-top:20px;
+  }
   .about__image{
     text-align: center;
   }
@@ -273,14 +324,14 @@ html,body {
  }
  .header__content__sub-title li{
    display: inline-block;
-   font-size: 12px;
+   font-size: 15px;
    color: #e6e6e6;
  }
- .header__content__title {
-  font-size: 20px;
+ .header__content__title{
+  font-size: 20px; 
 }
 .header__content__block {
-  font-size: 20px;
+  font-size: 30px;
 }
 .header__content__sub-title li {
   font-size: 12px;
@@ -290,23 +341,25 @@ html,body {
   padding-bottom: 10px;
 }
  .header--bg{
-   background: url("../assets/images/p.p2.jpg") no-repeat;
-   background-size: cover;
-   position: relative;
-   z-index: 1;
-   height: 65vh;
+   height: 55vh;
  }
  .header__content{
-   padding-top: 0px;
+   padding-top: 70px;
    padding-bottom:0px;
  }
 }
 @media screen and (min-width:482px) and (max-width:991px){
+  .about__description{
+    padding-left: 0px;
+  }
+  .button--colorful{
+    margin-left: 0px;
+   }
   .about__image{
    text-align: center;
  }
  .header__content__title{
-  font-size: 20px; 
+  font-size: 15px; 
 }
 .header__content__sub-title li{
   display: inline-block;
@@ -314,14 +367,10 @@ html,body {
   color: #e6e6e6;
 }
 .header--bg{
-  background: url("../assets/images/p.p2.jpg") no-repeat;
-  background-size: cover;
-  position: relative;
-  z-index: 1;
   height: 50vh;
 }
 .header__content{
-  padding-top: 0px;
+  padding-top: 80px;
   padding-bottom:0px;
 }
 }
@@ -338,14 +387,15 @@ html,body {
 }
 
 .gutters-80.row{
-  margin-right: -40px;
-  margin-left: -40px;
+  margin-right:0px;
+  margin-left:0px;
 }
 
 .gutters-80 > [class^="col-"], .gutters-80 > [class^="col-"]{
-  padding-right: 40px;
-  padding-left: 40px;
+  padding-right: 0px;
+  padding-left: 0px;
 }
+
 
 .row--margin-top{
 	margin-top: 40px;
@@ -367,6 +417,7 @@ html,body {
  font-family: Roboto-Light;
  color: #fff;
  font-size: 12px;
+ margin-left: 50px;
 }
 
 .button--default{
@@ -443,13 +494,14 @@ html,body {
 }
 
 .gutters-60.row{
-  margin-right: -30px;
+  margin-right: -60px;
   margin-left: -30px;
 }
 
 .gutters-60 > [class^="col-"], .gutters-60 > [class^="col-"]{
   padding-right: 30px;
   padding-left: 30px;
+  margin:0 90px;
 }
 
 .service .thumbnail{
@@ -1380,7 +1432,20 @@ color: rgb(33, 33, 33) ;
 .skill-bars li .percent100 { width: 100%; }
 
 
-
+@media (max-width:958px){
+  .cv-row{
+    flex-direction: column;
+  }
+  .cv{
+    margin: 20px 15px;
+    justify-content: center;
+    align-items: center;
+  }
+  .cv-col{
+    flex-direction: 100%;
+    width: 100%;
+  }
+}
 
 
 
